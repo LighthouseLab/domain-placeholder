@@ -1,0 +1,17 @@
+{
+  "name": "vite-domain-placeholder",
+  "version": "1.0.0",
+  "description": "A placeholder for domain names.",
+  "main": "index.js",
+  "repository": "https://github.com/ricardobalk/vite-domain-placeholder",
+  "author": "Ricardo Balk <14904229+ricardobalk@users.noreply.github.com>",
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "vite": "^4.3.3"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --mode production"
+  }
+}

@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  envsubst:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - ./.env
+    volumes:
+      - ./dist:/app/dist
+      - ./index.template.html:/app/index.template.html
+    command: sh -c 'envsubst < /app/index.template.html > /app/dist/index.html'
